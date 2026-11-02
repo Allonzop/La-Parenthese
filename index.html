@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Parenthèse — décoration, ameublement et art de la table à Charleville-Mézières</title>
+<meta name="description" content="La Parenthèse, 15 rue Pierre Bérégovoy à Charleville-Mézières : décoration, ameublement et art de la table. Ouvert du mardi au samedi, 10h–12h et 13h30–19h.">
+<link rel="icon" href="logo-noel.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sauge:#A9B59D; --sauge-f:#7D8B70; --sauge-vl:#EDF0E9;
+  --laiton:#AB8763; --laiton-f:#8A6A4A;
+  --encre:#23251F; --encre-2:#5C5F55; --encre-3:#8A8D83;
+  --lin:#FAF8F4; --lin-2:#F1EDE5; --lin-3:#E3DCD0;
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--lin); color:var(--encre);
+  font-family:Raleway,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px; line-height:1.68; font-weight:300;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block}
+a{color:var(--laiton-f)}
+h1,h2,h3{font-family:Italiana,Georgia,serif; font-weight:400; line-height:1.12; margin:0; letter-spacing:.015em}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 24px}
+.eyebrow{
+  font-family:Raleway,sans-serif; font-size:11px; font-weight:600;
+  letter-spacing:.3em; text-transform:uppercase; color:var(--sauge-f);
+  display:flex; align-items:center; gap:14px; margin:0 0 20px;
+}
+.eyebrow::after{content:""; height:1px; flex:1; background:var(--lin-3)}
+
+/* topbar */
+.top{position:sticky; top:0; z-index:50; background:rgba(250,248,244,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--lin-3)}
+.top .wrap{display:flex; align-items:center; gap:24px; min-height:72px}
+.brand{text-decoration:none; color:var(--encre); white-space:nowrap; font-family:Italiana,serif; font-size:25px; letter-spacing:.06em}
+.top nav{margin-left:auto; display:flex; gap:28px; flex-wrap:wrap}
+.top nav a{color:var(--encre-2); text-decoration:none; font-size:14px; font-weight:400; letter-spacing:.04em}
+.top nav a:hover{color:var(--laiton-f)}
+.top .tel{background:var(--encre); color:#fff; text-decoration:none; border-radius:2px;
+  padding:10px 18px; font-size:13.5px; font-weight:500; white-space:nowrap; letter-spacing:.05em}
+.top .tel:hover{background:var(--sauge-f)}
+
+/* hero */
+.hero{padding:70px 0 64px}
+.hero .wrap{display:grid; grid-template-columns:1.04fr .96fr; gap:56px; align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,66px)}
+.trio{margin:0 0 20px; font-size:11.5px; letter-spacing:.3em; text-transform:uppercase; color:var(--sauge-f)}
+.lede{font-size:18.5px; color:var(--encre-2); margin:24px 0 0; max-width:32em}
+.btns{display:flex; gap:13px; flex-wrap:wrap; margin-top:32px}
+.btn{display:inline-block; text-decoration:none; border-radius:2px; padding:13px 28px;
+  font-size:14px; font-weight:500; letter-spacing:.06em; text-transform:uppercase}
+.btn-p{background:var(--sauge-f); color:#fff}
+.btn-p:hover{background:var(--encre)}
+.btn-s{background:transparent; color:var(--encre); border:1px solid var(--lin-3)}
+.btn-s:hover{border-color:var(--encre)}
+.heroimg img{width:100%; max-width:540px; margin-left:auto}
+.chips{display:flex; gap:9px; flex-wrap:wrap; margin-top:28px}
+.chip{font-size:12.5px; color:var(--encre-2); border:1px solid var(--lin-3); border-radius:999px; padding:5px 14px; letter-spacing:.03em}
+.chip b{color:var(--encre); font-weight:600}
+
+/* univers */
+.univers{background:var(--lin-2); padding:80px 0; border-top:1px solid var(--lin-3); border-bottom:1px solid var(--lin-3)}
+h2.big{font-size:clamp(32px,4.2vw,48px)}
+h2.big + p{margin-top:16px}
+.p{color:var(--encre-2)}
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:44px}
+.card{margin:0}
+.card img{width:100%; aspect-ratio:4/5; object-fit:cover}
+.card h3{font-size:27px; margin:22px 0 10px}
+.card p{margin:0; font-size:15.5px; color:var(--encre-2)}
+
+/* marques */
+.marques{padding:64px 0; text-align:center}
+.marques .lbl{font-size:11px; letter-spacing:.3em; text-transform:uppercase; color:var(--sauge-f); margin:0 0 22px}
+.mlist{display:flex; gap:14px 44px; flex-wrap:wrap; justify-content:center;
+  font-family:Italiana,serif; font-size:27px; color:var(--encre); letter-spacing:.04em}
+.mnote{margin:24px 0 0; font-size:14px; color:var(--encre-3)}
+
+/* galerie */
+.gal-sec{padding:80px 0; background:var(--sauge-vl)}
+.gal{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:38px}
+.gal figure{margin:0}
+.gal img{width:100%; aspect-ratio:4/5; object-fit:cover}
+
+/* infos */
+.infos{padding:80px 0}
+.infos .two{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start}
+.hgrid{margin-top:28px; border-top:1px solid var(--lin-3)}
+.hgrid div{display:flex; justify-content:space-between; gap:16px; padding:12px 2px; font-size:16px; border-bottom:1px solid var(--lin-3)}
+.hgrid .j{font-weight:500}
+.hgrid .h{color:var(--encre-2); font-variant-numeric:tabular-nums; text-align:right}
+.hgrid .off .h{color:var(--encre-3)}
+.contact{display:grid; gap:6px}
+.contact a,.contact p{margin:0; font-size:16.5px; color:var(--encre-2); text-decoration:none}
+.contact a:hover{color:var(--laiton-f)}
+.contact .lbl{font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--sauge-f); margin-top:20px}
+.socials{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px}
+.socials a{border:1px solid var(--lin-3); color:var(--encre-2); border-radius:2px; padding:8px 16px; font-size:13px; text-decoration:none; letter-spacing:.04em}
+.socials a:hover{border-color:var(--sauge-f); color:var(--encre)}
+
+/* footer */
+footer{background:var(--encre); color:#9A9D93; padding:46px 0 40px; font-size:14px}
+footer .wrap{display:flex; gap:30px; flex-wrap:wrap; justify-content:space-between; align-items:flex-start}
+footer a{color:#C8CBC1}
+footer .legal{max-width:42em; font-size:13px}
+
+/* aconf */
+.aconf{display:inline-block; vertical-align:middle; margin-left:7px;
+  font-family:Raleway,sans-serif; font-size:10px; font-weight:600;
+  letter-spacing:.11em; text-transform:uppercase;
+  color:#9A5B3A; background:#F7EDE5; border:1px dashed #C08A63;
+  border-radius:999px; padding:2px 9px; line-height:1.6; white-space:nowrap}
+
+/* demo */
+.demo{position:fixed; right:16px; bottom:16px; z-index:90;
+  background:var(--encre); color:#fff; text-decoration:none; border-radius:999px;
+  padding:9px 18px; font-size:12px; font-weight:600; letter-spacing:.08em;
+  box-shadow:0 8px 22px rgba(35,37,31,.25)}
+.demo:hover{background:var(--sauge-f)}
+.demo span{color:var(--sauge)}
+
+@media (max-width:980px){
+  .hero .wrap,.infos .two{grid-template-columns:1fr; gap:38px}
+  .heroimg img{margin:0 auto}
+  .cards{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .hero{padding:44px 0 36px}
+  .univers,.gal-sec,.infos{padding:54px 0}
+  .top nav{display:none}
+  .demo{right:10px; bottom:10px; padding:8px 14px; font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">LA PARENTHÈSE</a>
+    <nav>
+      <a href="#univers">Les univers</a>
+      <a href="#marques">Les marques</a>
+      <a href="#galerie">La boutique</a>
+      <a href="#venir">Horaires</a>
+    </nav>
+    <a class="tel" href="tel:+33324353941">03 24 35 39 41</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="trio">Décoration · Ameublement · Art de la table</p>
+      <h1>Inspirez, rêvez, décorez.</h1>
+      <p class="lede">Au 15 rue Pierre Bérégovoy, à Charleville-Mézières. Du vase qu'on rapporte sans l'avoir prévu au canapé qu'on vient voir trois fois avant de se décider — et toute la table qui va avec.</p>
+      <div class="btns">
+        <a class="btn btn-p" href="#venir">Venir à la boutique</a>
+        <a class="btn btn-s" href="#univers">Découvrir les univers</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Ouvert du <b>mardi au samedi</b></span>
+        <span class="chip">En plein centre-ville</span>
+        <span class="chip">Retrait en magasin</span>
+      </div>
+    </div>
+    <div class="heroimg">
+      <img src="console-vert.jpg" alt="Un coin de la boutique : console en chêne, vases nervurés, lampe en verre vert et fauteuil bouclé devant un mur sauge">
+    </div>
+  </div>
+</section>
+
+<section class="univers" id="univers">
+  <div class="wrap">
+    <p class="eyebrow">Les univers</p>
+    <h2 class="big">Trois façons de pousser la porte.</h2>
+    <p class="p" style="max-width:42em">On vient rarement pour une seule chose. C'est un peu le principe de la maison.</p>
+    <div class="cards">
+      <figure class="card">
+        <img src="console-or.jpg" alt="Un mur de tableaux dorés, un masque en laiton et une console noire surmontée de lampes">
+        <h3>Décoration</h3>
+        <p>Tableaux, miroirs, luminaires, vases, objets, fleurs séchées et artificielles. De quoi finir une pièce, ou la recommencer.</p>
+      </figure>
+      <figure class="card">
+        <img src="canape.jpg" alt="Un canapé courbe en tissu bouclé crème, devant deux toiles contemporaines">
+        <h3>Ameublement</h3>
+        <p>Canapés, fauteuils, consoles, tables : des pièces choisies à l'unité, qu'on peut voir, toucher et essayer en boutique.</p>
+      </figure>
+      <figure class="card">
+        <img src="table-doree.jpg" alt="Une table dressée avec des assiettes rayées or et blanc, des couverts dorés et des flûtes">
+        <h3>Art de la table</h3>
+        <p>Assiettes, verres, couverts, chemins de table, bougies. Pour les dimanches en famille comme pour les grandes tablées.</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="marques" id="marques">
+  <div class="wrap">
+    <p class="lbl">Quelques marques en boutique</p>
+    <div class="mlist">
+      <span>J-Line</span>
+      <span>Poudrée</span>
+      <span>Bloom</span>
+    </div>
+    <p class="mnote">Marques relevées en boutique.<span class="aconf">liste à compléter</span></p>
+  </div>
+</section>
+
+<section class="gal-sec" id="galerie">
+  <div class="wrap">
+    <p class="eyebrow">La boutique</p>
+    <h2 class="big">15 rue Pierre Bérégovoy.</h2>
+    <div class="gal">
+      <figure><img src="table-verte.jpg" alt="Une table dressée en vert et rose, avec un vase J-Line et une lampe noire"></figure>
+      <figure><img src="bouquet.jpg" alt="Un grand bouquet de fleurs artificielles bleues, violettes et jaunes dans un vase blanc"></figure>
+      <figure><img src="poudree.jpg" alt="Le rayon des bougies parfumées Poudrée, rangées sur des étagères blanches"></figure>
+      <figure><img src="mugs-bloom.jpg" alt="Des mugs et bols à motifs fleuris, présentés sur une planche en bois"></figure>
+      <figure><img src="jline.jpg" alt="Un vase blanc J-Line garni de fleurs orange sur une table dressée"></figure>
+      <figure><img src="vases.jpg" alt="Une sélection de vases colorés : rose, vert d'eau, jaune moutarde et verre moucheté"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="infos" id="venir">
+  <div class="wrap two">
+    <div>
+      <p class="eyebrow">Horaires &amp; accès</p>
+      <h2 class="big">Du mardi au samedi.</h2>
+      <div class="hgrid">
+        <div class="off"><span class="j">Lundi</span><span class="h">Fermé</span></div>
+        <div><span class="j">Mardi</span><span class="h">10h00 – 12h00 · 13h30 – 19h00</span></div>
+        <div><span class="j">Mercredi</span><span class="h">10h00 – 12h00 · 13h30 – 19h00</span></div>
+        <div><span class="j">Jeudi</span><span class="h">10h00 – 12h00 · 13h30 – 19h00</span></div>
+        <div><span class="j">Vendredi</span><span class="h">10h00 – 12h00 · 13h30 – 19h00</span></div>
+        <div><span class="j">Samedi</span><span class="h">10h00 – 12h00 · 13h30 – 19h00</span></div>
+        <div class="off"><span class="j">Dimanche</span><span class="h">Fermé</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="contact">
+        <p class="lbl">Adresse</p>
+        <p>15 rue Pierre Bérégovoy<br>08000 Charleville-Mézières</p>
+        <a href="https://www.google.com/maps/place/La+parenth%C3%A8se/@49.7711782,4.7199314,17z" target="_blank" rel="noopener">Itinéraire sur Google Maps →</a>
+        <p class="lbl">Téléphone</p>
+        <a href="tel:+33324353941">03 24 35 39 41</a>
+        <p class="lbl">Courriel</p>
+        <a href="mailto:contactdeco@laparenthese08.fr">contactdeco@laparenthese08.fr</a>
+        <p class="lbl">Nous suivre</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/p/La-Parenth%C3%A8se-61579109060549/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/laparenthese.decoration/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <p class="lbl">Services</p>
+        <p>Retrait en magasin · achats en boutique<span class="aconf">livraison ?</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p style="margin:0 0 8px"><span style="font-family:Italiana,serif;color:#F1EDE5;font-size:22px;letter-spacing:.06em">LA PARENTHÈSE</span></p>
+      <p style="margin:0">15 rue Pierre Bérégovoy, 08000 Charleville-Mézières<br>
+      <a href="tel:+33324353941">03 24 35 39 41</a> · <a href="mailto:contactdeco@laparenthese08.fr">contactdeco@laparenthese08.fr</a></p>
+      <p style="margin:14px 0 0"><a href="mentions-legales.html">Mentions légales</a></p>
+    </div>
+    <p class="legal">Membre des Vitrines de Charleville-Mézières. Les photographies sont celles publiées par La Parenthèse sur sa fiche d'établissement Google.</p>
+  </div>
+</footer>
+
+<a class="demo" href="https://kraon.netlify.app/offre" target="_blank" rel="noopener">DÉMO <span>KRAON</span></a>
+
+</body>
+</html>
